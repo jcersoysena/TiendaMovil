@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SuTiendaMovil.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SuTiendaMovil"
+    Shell.FlyoutBehavior="Disabled">
+
+
+    <TabBar>
+        <ShellContent
+            Title="Principal"
+            Icon="house.png"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="Home" />
+
+        <ShellContent
+            Title="VentaMovil"
+            Icon="map.png"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="Ventaenlinea" />
+
+        <ShellContent
+            Title="Mis Ordenes"
+            Icon="orden1.png"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="Mis Ordenes" />
+    </TabBar>
+
+</Shell>
